@@ -6,13 +6,13 @@ namespace ResizeArrayProgram
     {
         public static void Resize(ref int[] array, int newSize)
         {
-            int[] Array = new int[newSize];
+            int[] newarray = new int[newSize];
            
             for (int i = 0; i < array.Length; i++)
             {
-                Array[i] = array[i];
+                newarray[i] = array[i];
             }
-            array = Array;
+            array = newarray;
 
         }
     }
